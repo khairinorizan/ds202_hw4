@@ -1,0 +1,37 @@
+---
+title: 'DS202: Homework 4'
+author: "Muhammad Khairi Norizan"
+date: "10/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Flight Data
+```{r, echo=FALSE}
+
+```
+
+### Question 1
+
+Find if the flight carries use the same flight number only once in each day. Create a data frame where each row corresponds to a different combination of date, carrier, and flight number, and there should be an additional column `once` indicating whether the flight number has been used only once (`TRUE`) or not (`FALSE`). Finally, print out the first few rows of the records where the `once` column is `FALSE`.
+
+### Question 2
+
+Add the location of both the origin and destination (i.e. the `lat` and `lon`) to `flights`. Retain only columns for the airport code, airport name, longitude, and latitude. Name the columns in a user-friendly manner.
+
+### Question 3
+
+Create appropriate numerical and/or graphical summaries to investigate how visibility condition makes it more likely to see a delay. Make sure to also investigate the flight delays with missing visibility values. (Hint: use `left_join`)
+
+### Question 4
+
+Which 5 destination airports have the least severe arrival delay? The severity of delay is defined as the proportion of arriving flights that have no less than 30 minutes arrival delay. To give you formula, the proportion of delayed flights = the number of delayed flights / the total number of flights. Create a data frame containing the airport name, code, and the severity of delay.
+
+### Question 5
+
+What happened on June 13, 2013? Look at the delay severity by airport on that day, and then use Google to cross-reference with the weather.
+
+
